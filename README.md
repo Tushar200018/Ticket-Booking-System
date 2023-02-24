@@ -8,5 +8,6 @@ Steps to Run the App
 3. Now, install the dependencies first by typing, "npm i" in the terminal.
 4. Create a ".env" in the backend folder, and include your MongoDB Altlas connection url in the file by typing, "MONGODB_ATLAS_URL = [Your URL goes here]".
 5. Now run "nodemon index.js" in the terminal, this will start the backend server.
-6. Now open another terminal and cd into the frontend folder and again do perform "npm i".
-7. Now, run npm start, and the app has started on port 3000, you can access from this url "http://localhost:3000/"
+6. You will have to add some documents in the DB created from MongoDB Atlas itself, in the format {name: "[MovieName goes here]", occupiedIndices: {}}.
+7. Now open another terminal and cd into the frontend folder and again do perform "npm i".
+8. Now, run npm start, and the app has started on port 3000, you can access from this url "http://localhost:3000/"

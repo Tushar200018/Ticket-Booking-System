@@ -6,7 +6,7 @@ Steps to Run the App
 1. First open the project in vs-code and open the terminal with "assessment" as the root folder.
 2. Now go into the backend folder by typing "cd backend/" in the terminal.
 3. Now, install the dependencies first by typing, "npm i" in the terminal.
-4. Create a ".env" in the backend folder, and include your MongoDB Altlas connection url in the file by typing, "MONGODB_ATLAS_URL = [Your URL goes here]".
+4. Create a ".env" in the backend folder, and include your MongoDB Altlas connection url in the file by typing, "MONGODB_ATLAS_URL = [Your URL goes here]" and also add the Database name like this, "DB_NAME=[Database name goes here]".
 5. Now run "nodemon index.js" in the terminal, this will start the backend server.
 6. You will have to add some documents in the DB created from MongoDB Atlas itself, in the format {name: "[MovieName goes here]", occupiedIndices: {}}.
 7. Now open another terminal and cd into the frontend folder and again do perform "npm i".

@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require('dotenv').config();
-const {MONGODB_ATLAS_URL} = process.env
+const {MONGODB_ATLAS_URL,DB_NAME} = process.env
 
 const app = express();
 const PORT = 3001;
@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-mongoose.connect(MONGODB_ATLAS_URL)
+mongoose.connect(MONGODB_ATLAS_URL,{dbName: DB_NAME})
 .then(()=>console.log("Databse connected Successfully"))
 .catch((e)=>console.log(`Error in Databse Connection ${e}`))
 
